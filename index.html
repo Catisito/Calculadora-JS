@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container-calculadora">
+    <h1>Calculadora</h1>
+    <select id="operador">
+      <option value="add">Sumar</option>
+      <option value="subtract">Restar</option>
+      <option value="multiply">Multiplicar</option>
+      <option value="divide">Dividir</option>
+    </select><br><br>
+  
+    <label for="numero1">numero1 1:</label>
+    <input type="number" id="numero1"><br><br>
+    
+    <label for="numero2">numero 2:</label>
+    <input type="number" id="numero2"><br><br>
+    
+    <label class="operador" for="operador">Seleccione Operacion:</label>
+    
+    <button onclick="calculate()">Calcular</button>
+    
+    <p id="result"></p>
+   </div>
+    
+    
+    <script src="./calculator.js"></script>
+</body>
+</html>

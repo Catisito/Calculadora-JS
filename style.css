@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+:root {
+    --fuente: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: rgb(42,39,48);
+    background: linear-gradient(90deg, rgba(42,39,48,1) 14%, rgba(109,110,1,1) 75%);
+    color: white;
+}
+
+.container-calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    background-color: #001219;
+    color: gold;
+    border: none;
+    font-size: 2em;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+label{
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: var(--fuente);
+    text-transform: uppercase;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: 4em;
+}
+
+h2{
+    font-family: var(--fuente);
+    font-size: 2em;
+}
+
+.operador{
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+button{
+    cursor: pointer;
+    margin: 15px;
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 60px;
+    background-color: #fb8500;
+}
+
+button:hover{
+    background-color: #df7700;
+}
+
+select{
+    background-color: #001219;
+    color: gold;
+    margin-bottom: 0px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#result{
+    padding: 5px;
+    font-size: 2.7em;
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #result {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    transition: opacity 0.5s ease-in-out;
+  }
